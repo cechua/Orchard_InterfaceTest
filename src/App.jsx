@@ -5,7 +5,7 @@ const App = () => {
   return (
     <main className="bg-bodyBG">
       <MainContent />
-      {/* <SecondaryContent /> */}
+      <SecondaryContent />
     </main>
   );
 };

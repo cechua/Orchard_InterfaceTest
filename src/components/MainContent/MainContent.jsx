@@ -22,7 +22,7 @@ const MainContent = () => {
             <img
               src={MainImage1}
               alt="main-image-1"
-              className="cursor-pointer"
+              className="cursor-pointer transition-all duration-200 hover:scale-105"
               onClick={() => setModalImage(MainImage1)}
             />
           </div>
@@ -30,13 +30,13 @@ const MainContent = () => {
             <img
               src={MainImage2}
               alt="main-image-2"
-              className="h-[20rem] xl:h-[28rem] w-[25rem] xl:w-full cursor-pointer"
+              className="h-[20rem] xl:h-[28rem] w-[25rem] xl:w-full cursor-pointer transition-all duration-200 hover:scale-105"
               onClick={() => setModalImage(MainImage2)}
             />
             <img
               src={MainImage3}
               alt="main-image-3"
-              className="h-[20rem] xl:h-[28rem] w-[25rem] xl:w-full cursor-pointer"
+              className="h-[20rem] xl:h-[28rem] w-[25rem] xl:w-full cursor-pointer transition-all duration-200 hover:scale-105"
               onClick={() => setModalImage(MainImage3)}
             />
           </div>
@@ -73,7 +73,7 @@ const MainContent = () => {
           id="default-modal"
           tabindex="-1"
           aria-hidden="true"
-          className="flex overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-full"
+          className="flex overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-full animate-modalFadeIn"
         >
           <div className="relative p-4 xl:w-1/3 max-h-full">
             <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">

@@ -18,6 +18,19 @@ module.exports = {
         tabletContent: '23rem 23rem 23rem',
         mobileContent: '11rem 11rem 11rem',
       },
+      animation: {
+        modalFadeIn: 'modalFadeIn 0.5s ease-in',
+      },
+      keyframes: {
+        modalFadeIn: {
+          '0%': {
+            opacity: 0,
+          },
+          '70%': {
+            opacity: 1,
+          },
+        },
+      },
     },
   },
   plugins: [],

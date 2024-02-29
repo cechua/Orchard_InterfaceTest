@@ -10,6 +10,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html', // to import index.html file inside index.js
+      favicon: './src/assets/favicon.ico',
     }),
   ],
   devServer: {
@@ -32,15 +33,9 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
       {
-        test: /\.(png|woff|woff2|eot|ttf|svg)$/, // to import images and fonts
+        test: /\.(jpg|png|woff|woff2|eot|ttf|svg|ico)$/, // to import images and fonts
         loader: 'url-loader',
         options: { limit: false },
-      },
-      {
-        test: /\.(jpg)$/,
-        use: {
-          loader: 'url-loader',
-        },
       },
     ],
   },

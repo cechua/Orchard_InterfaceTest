@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local(''), url('./assets/OpenSans/OpenSans-Bold.ttf') format('truetype'),
+    url('./assets/OpenSans/OpenSans-BoldItalic.ttf') format('truetype'),
+    url('./assets/OpenSans/OpenSans-ExtraBold.ttf') format('truetype'),
+    url('./assets/OpenSans/OpenSans-ExtraBoldItalic.ttf') format('truetype'),
+    url('./assets/OpenSans/OpenSans-Italic.ttf') format('truetype'),
+    url('./assets/OpenSans/OpenSans-Light.ttf') format('truetype'),
+    url('./assets/OpenSans/OpenSans-LightItalic.ttf') format('truetype'),
+    url('./assets/OpenSans/OpenSans-Medium.ttf') format('truetype'),
+    url('./assets/OpenSans/OpenSans-MediumItalic.ttf') format('truetype'),
+    url('./assets/OpenSans/OpenSans-Regular.ttf') format('truetype'),
+    url('./assets/OpenSans/OpenSans-SemiBold.ttf') format('truetype'),
+    url('./assets/OpenSans/OpenSans-SemiBoldItalic.ttf') format('truetype');
+}
+
+@layer base {
+  html {
+    font-family: 'Open Sans', system-ui, sans-serif;
+    font-size: 62.5%;
+  }
+}
+@media (min-width: 640px) {
+  @layer base {
+    html {
+      font-size: 25%;
+    }
+  }
+}
+@media (min-width: 768px) {
+  @layer base {
+    html {
+      font-size: 35%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  @layer base {
+    html {
+      font-size: 45%;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  @layer base {
+    html {
+      font-size: 55%;
+    }
+  }
+}

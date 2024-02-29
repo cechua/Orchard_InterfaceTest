@@ -24,33 +24,3 @@
     font-size: 62.5%;
   }
 }
-@media (min-width: 640px) {
-  @layer base {
-    html {
-      font-size: 25%;
-    }
-  }
-}
-@media (min-width: 768px) {
-  @layer base {
-    html {
-      font-size: 35%;
-    }
-  }
-}
-
-@media (min-width: 1024px) {
-  @layer base {
-    html {
-      font-size: 45%;
-    }
-  }
-}
-
-@media (min-width: 1280px) {
-  @layer base {
-    html {
-      font-size: 55%;
-    }
-  }
-}

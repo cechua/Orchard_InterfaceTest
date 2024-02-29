@@ -7,11 +7,11 @@ import MainImage3 from '../../assets/component-02/Image-03.jpg';
 
 const SecondaryContent = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-full">
-      <h6 className="flex text-center uppercase text-primaryFontColor text-[4.8rem]">
+    <div className="flex flex-col justify-center sm:pb-64 items-center">
+      <h6 className="flex text-center uppercase text-primaryFontColor text-[2.6rem] md:text-[4.8rem]">
         All the latest from AEG
       </h6>
-      <div className="grid grid-cols-3 gap-8 mt-12 mb-64">
+      <div className="grid grid-cols-mobileContent md:grid-cols-tabletContent xl:grid-cols-content gap-4 xl:gap-6">
         <ArticleCard
           articleTitle={'summer lunch menu by mark best'}
           articleDescription={

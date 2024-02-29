@@ -13,6 +13,11 @@ module.exports = {
         secondaryFontColor: '#bfc1c1',
         redFontColor: '#cf1430',
       },
+      gridTemplateColumns: {
+        content: '43rem 43rem 43rem',
+        tabletContent: '23rem 23rem 23rem',
+        mobileContent: '11rem 11rem 11rem',
+      },
     },
   },
   plugins: [],
